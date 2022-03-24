@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Righteous|Ubuntu:700');
+
+@font-face {
+	font-family: Hurricane-Regular;
+	src: url(/assets/fonts/Hurricane-Regular.ttf);
+}
+
+@font-face {
+	font-family: Arimo-Bold;
+	src: url(/assets/fonts/Arimo-Bold.ttf);
+}
+
+@font-face {
+	font-family: Arimo-Medium;
+	src: url(/assets/fonts/Arimo-Medium.ttf);
+}
+
+@font-face {
+	font-family: Arimo-Regular;
+	src: url(/assets/fonts/Arimo-Regular.ttf);
+}
+
+@font-face {
+	font-family: Palanquin-Thin;
+	src: url(/assets/fonts/Palanquin-Thin.ttf);
+}
+
+@font-face {
+	font-family: Inspiration-Regular;
+	src: url(/assets/fonts/Inspiration-Regular.ttf);
+}
+
+@font-face {
+	font-family: FrederickatheGreat-Regular;
+	src: url(/assets/fonts/FrederickatheGreat-Regular.ttf);
+}
+
+.padpx {
+	margin-bottom: 20px;
+}
+
+body {
+	margin:0;
+	padding:0;
+	/* font-family: 'Ubuntu', sans-serif; */
+}
+
+h1 {
+	font-family: Arimo-Bold;
+	font-size: 56px;
+}
+
+/* ------- Home Section ---------*/
+section#home {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background: url(../assets/img/bg1.jpg) no-repeat bottom right;
+	background-size: cover;
+	background-position:center;
+}
+section.particles-js { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+}
+section#home .welcome {
+	position: absolute;
+	top: 30%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font-size: 20px;
+	height: 40px;
+	pointer-events: none;
+	font-family: 'Electrolize', sans-serif;
+	padding: 0;
+	color: #fff;
+}
+section#home .mzpoon {
+	position: absolute;
+	top: -20%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width:300px;
+	height: 60px;
+	font-family: Inspiration-Regular;
+	font-size: 58px;
+	margin: auto;
+	color: #fff;
+	padding: 0;
+}
+section#home .mzintro {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 30px;
+	font-size: 69px;
+	font-family: FrederickatheGreat-Regular;
+	/* font-family: 'Electrolize', sans-serif; */
+	margin: auto;
+	color: #fff;
+	padding: 0;
+}
+section#home .object {
+	animation: MoveUpDown 1.5s linear infinite;
+	width: 60px;
+	height: 60px;
+	left:0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+}
+@keyframes MoveUpDown {
+	0%, 100% {bottom: 0;}
+	50% {bottom: 25px;}
+}
+
+
+/*	Information Section
+/*----------------------------------------------*/
+#about {
+	background-color: #2b2928;
+	height: auto;
+	padding-bottom: 40px;
+}
+
+#personalPhoto {
+	text-align: center;
+}
+
+#about h3{
+	color: white;
+	font-family: Arimo-Medium;
+}
+#about p{
+	color: rgb(165, 160, 160);
+	font-family: Arimo-Regular;
+}
+
+#aboutTopDiv {
+	margin-top: -100px;
+	
+}
+
+#personalPhoto {
+	text-align: left;
+	padding-bottom: 40px;
+}
+
+#personalPhoto img {
+	width: 65%;
+}
+
+
+/*	Skill Section
+/*----------------------------------------------*/
+#skill {
+	background-color:#fff ;
+	height: auto;
+}
+
+#skill h4 {
+	font-family: Arimo-Medium;
+}
+
+#skill h3 {
+	font-family: Arimo-Medium;
+}
+
+#skill h2 {
+	font-family: Arimo-bold;
+}
+
+#skill p {
+	font-family: Palanquin-Thin;
+	line-height: 120%;
+}
+
+#skill .detailStyle span {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.laskill {
+	padding-bottom: 20px;
+}
+
+#skill ul {
+	list-style-type: none;
+	margin: 0px;
+}
+#skill li {
+	float: left;
+	list-style-type: none;
+	margin: 0px;
+	padding-right: 30px;
+}
+
+#skill .selfskill img{
+	width:70%;
+}
+
+#myExprience img {
+	width: 100%;
+}
+
+#myExprience h3 p {
+	font-size: 14px;
+}
+
+#myEducation img{
+	width:20%;
+	padding-bottom: 20px;
+}
+
+
+/*	Skill Bars (Experience Skill)
+/*----------------------------------------------*/
+
+.experienceSkill {
+    text-align: right; /* Right-align text */
+    padding-bottom: 5px; /* Add bottom padding */
+    height: 20px;
+    color: white; /* White text color */
+}
+.skillBarSec:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.skillBarContainer {
+    position: relative;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.skillBarContainerGreen div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.skillBarContainerOrange div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.skillBarContainerRed div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+	margin-bottom: 25px;
+    background-color: rgb(235, 65, 13);
+}
+
+.skillDetail {
+    justify-content: space-between;
+    margin-bottom: 3px;
+    width: 100%;
+    display: flex;
+}
+
+
+/*	Skill Bars (Experience Skill)
+/*----------------------------------------------*/
+#Virtualization-bar{
+    animation: Virtualization-fill 2s forwards;
+}
+@keyframes Virtualization-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+#Server-Upgrade-bar{
+    animation: Server-Upgrade-fill 2s forwards;
+}
+@keyframes Server-Upgrade-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+#Server-Admin-bar{
+    animation: Server-Admin-fill 2s forwards;
+}
+@keyframes Server-Admin-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+#Backup-Solution-bar{
+    animation: Backup-Solution-fill 2s forwards;
+}
+@keyframes Backup-Solution-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+#Networking-bar{
+    animation: Networking-fill 2s forwards;
+}
+@keyframes Networking-fill{
+    100%{
+        width: 75%;
+    }
+}
+
+#Security-bar{
+    animation: Security-fill 2s forwards;
+}
+@keyframes Security-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+#Wireless-bar{
+    animation: Wireless-fill 2s forwards;
+}
+@keyframes Wireless-fill{
+    100%{
+        width: 60%;
+    }
+}
+
+#Project-Host-bar{
+    animation: Project-Host-fill 2s forwards;
+}
+@keyframes Project-Host-fill{
+    100%{
+        width: 50%;
+    }
+}
+
+#codehtmlcss-bar{
+    animation: codehtmlcss-fill 2s forwards;
+}
+@keyframes codehtmlcss-fill{
+    100%{
+        width: 40%;
+    }
+}
+
+#codephpmysql-bar{
+    animation: codephpmysql-fill 2s forwards;
+}
+@keyframes codephpmysql-fill{
+    100%{
+        width: 30%;
+    }
+}
+
+#codejave-bar{
+    animation: codejave-fill 2s forwards;
+}
+@keyframes codejave-fill{
+    100%{
+        width: 10%;
+    }
+}
+
+/*	Skill Bars (Language Skill)
+/*----------------------------------------------*/
+.skillCantonese {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: rgb(68, 180, 68);
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skillEnglish {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: #d6c915;
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skillMandarin {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: #d69303;
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* resProject
+/*----------------------------------------------*/
+#resProject {
+	height: 300px;
+	margin-top: 70px;
+}
+
+#resProject img {
+	width: 100%;
+}
+
+.modal-content{
+	background-color: #000000;
+	color: #fff;
+}
+
+.modal-content span{
+	font-size: 16px;
+}
+
+.modal-content p{
+	font-size: 16px;
+	font-family: Arimo-bold;
+}
+
+#resProject p {
+	font-family: Palanquin-Thin;
+	line-height: 120%;
+}
+
+
+/* Brand_Section
+/*----------------------------------------------*/
+#Brand_Section {
+	font-family: Arimo-bold;
+	text-align: center;
+}
+
+/* Comment
+/*----------------------------------------------*/
+#Comment {
+	text-align: center;
+	color: white;
+	background-color: gray;
+}
+
+
+
+
+
+
+
+#endFoot {
+	background-color: black;
+	color: white;
+	padding-top: 40px;
+}
+
+#FooterContact {
+	text-align: center;
+}
+
+.FooterEnd {
+	color: white;
+	border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgba(255,255,255,0.31);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 10px 0px 30px 0px;
+}
+
+.FooterEnd span {
+	font-family: Inspiration-Regular;
+	font-size: 22px;
+}
